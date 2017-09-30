@@ -21,7 +21,7 @@ Each of the templates should be rendered with actual data when those routes are 
 
 ### Part 2
 
-Inside the provided directory `new_application`, there is an empty file `new_flask_app.py`, and an empty subdirectory `templates`.
+Inside the provided directory `new_application`, there is an empty file `new_flask_app.py`, and an empty subdirectory `templates`. (The subdirectory has an HTML file in it, but that file is empty! You could replace it, fill it in with content, or rename it if you wanted. *[Note: if you delete a file, git will still need you to tell git, with the `git rm` command, that you've deleted it, to update that it isn't there! We can help you with this if you delete a file and have trouble dealing with it in git.]*)
 
 To complete this part, write Flask application code in the empty file and add at least 2 HTML files to the `templates` subdirectory. 
 
