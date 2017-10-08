@@ -1,0 +1,16 @@
+<ul>
+    <-- the following test comes from here https://stackoverflow.com/questions/10503981/check-if-an-array-is-empty-in-jinja2 -->
+    {% if results is defined and results|length > 0 %}
+        <img src="static/andySad.jpg"><br>
+        <h2>Sorry, we found some results</h2><br>
+        {% for r in results %}
+            <li>
+                <h3>Here's what we've found to match {{ r['artistName'] }}</h3>
+            <h2>Artist: {{ r['artistName'] }}</h2>
+            <div>See them on iTunes <a href="{{ r['artistViewUrl'] }}">here</a>.</div></li>
+        {% endfor %}
+    {% else %}
+        <img src="static/andyHappy.png"><br>
+        <h2>We didn't find any results!<br>New band name! You called it!</h2>
+    {% endif %}
+</ul>
